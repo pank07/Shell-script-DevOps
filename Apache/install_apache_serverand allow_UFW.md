@@ -1,4 +1,4 @@
-# Install Apache Server
+## Install Apache Server
 - Update linux Ubuntu(debian-based) system
 ```bash
 sudo apt update
