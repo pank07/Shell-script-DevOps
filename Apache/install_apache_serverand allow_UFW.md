@@ -15,7 +15,7 @@ sudo systemctl enable apache2
 ```bash
 sudo systemctl start apache2
 ```
-# Allow firewall (UFW)
+## Allow firewall (UFW)
 - Allow UFW for apache
 ```bash
 sudo ufw allow "Apache"
