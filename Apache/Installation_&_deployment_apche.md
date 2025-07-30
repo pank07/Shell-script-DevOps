@@ -83,7 +83,7 @@ sudo a2ensite myproject.conf
 sudo a2enmod rewrite
 ```
 > `a2ensite` command stand for Apache2 Enable Site & its purpose to enables a site’s config file .
-| `a2enmod` command stand for Apache2 Enable Mod  & its purpose to enables a module like `rewrite`.
+`a2enmod` command stand for Apache2 Enable Mod  & its purpose to enables a module like `rewrite`.
 
 ---
 
@@ -92,10 +92,8 @@ sudo a2enmod rewrite
 ```bash
 sudo a2dissite 000-default.conf
 ```
->| Command     | Purpose                       | Effect                               |
-| ----------- | ----------------------------- | ------------------------------------ |
-| `a2ensite`  | Enable a virtual host config  | Adds symlink to `sites-enabled`      |
-| `a2dissite` | Disable a virtual host config | Removes symlink from `sites-enabled` |
+>`a2ensite` enables a virtual host config & Adds symlink to `sites-enabled`
+`a2dissite` Disable a virtual host config & Removes symlink from `sites-enabled`
 
 >  This removes the symlink for myproject.conf from the sites-enabled folder, meaning Apache will no longer serve that site after a reload.
 ---
