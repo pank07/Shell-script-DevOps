@@ -12,7 +12,7 @@ LINK_DIR="/etc/nginx/sites-enabled/$PROJECT_NAME"
 USER="www-data"
 
 
-echo "👉 ### INSTALLING NODE.JS PROJECT DEPENDENCIES ###"
+echo "👉 ### INSTALLING "$PROJECT_NAME" NODE.JS PROJECT DEPENDENCIES ###"
 
 
 cd "$SOURCE_DIR"
