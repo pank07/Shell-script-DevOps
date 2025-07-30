@@ -1,4 +1,4 @@
-# Below is a full step-by-step guide to *"go live"* with your project on an Apache server (tested and true, Linux-style). Let’s break it down cleanly.
+# Below is a full step-by-step guide to *"go live"* with your project on an Apache server (Linux-style).
 
 ---
 
