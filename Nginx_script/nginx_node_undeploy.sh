@@ -1,8 +1,7 @@
 #!/bin/bash
 
-echo "### REMOVE WEBSITE PROJECT & SOFT LINK IN NGINX SERVER TO DEPLOY ANOTHER ONE...###"
-
 PROJECT_NAME="Ubuddy-school-Admin" # paste your project name
+echo "### REMOVE "$PROJECT_NAME" NGINX SERVER TO DEPLOY ANOTHER ONE...###"
 
 PROJECT_PATH="/etc/nginx/sites-available/$PROJECT_NAME"
 LINK_PATH="/etc/nginx/sites-enabled/$PROJECT_NAME"
