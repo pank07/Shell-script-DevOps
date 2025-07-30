@@ -1,3 +1,31 @@
+# Install Apache Server
+- Update linux Ubuntu(debian-based) system
+```bash
+sudo apt update
+```
+- Install Apache server
+```bash
+sudo apt install apache2 -y
+```
+- Enable apache server
+```bash
+sudo systemctl enable apache2
+```
+- Start apache server
+```bash
+sudo systemctl start apache2
+```
+### Allow firewall (UFW)
+- Allow UFW for apache
+```bash
+sudo ufw allow "Apache"
+```
+- Enable & check status of UFW for Apache
+```bash
+sudo ufw enable
+sudo ufw status
+```
+
 # Below is a full step-by-step guide to *"go live"* with your project on an Apache server (Linux-style).
 
 ---
