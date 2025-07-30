@@ -82,6 +82,10 @@ Paste the following config:
 sudo a2ensite myproject.conf
 sudo a2enmod rewrite
 ```
+> | Command    | Stands For          | Purpose                         |
+| ---------- | ------------------- | ------------------------------- |
+| `a2ensite` | Apache2 Enable Site | Enables a site’s config file    |
+| `a2enmod`  | Apache2 Enable Mod  | Enables a module like `rewrite` |
 
 ---
 
