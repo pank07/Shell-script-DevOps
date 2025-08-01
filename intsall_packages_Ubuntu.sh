@@ -1,75 +1,74 @@
 #!/bin/bash
 
-
 echo "###⚙ DEVOPS TOOLS INSTALLATION STARTED ###"
 
 # Update repositories
 sudo apt update
-echo "⚙  System updated..."
+echo "⚙SYSTEM UPDATE..."
 
 # --------------------
 # Docker
 # --------------------
 sudo apt install -y docker.io
-echo "📦 docker.io installed."
+echo "##📦 DOCKER.IO INSTALLED.##"
 
 sudo systemctl enable docker
 sudo systemctl start docker
-echo "📦 Docker service enabled and started."
+echo "##📦DOCKER SERVICE ENABLED & STARTED##."
 
 # --------------------
 # Jenkins (via Debian repo)
 # --------------------
 sudo apt install -y fontconfig openjdk-17-jre
-echo "☕  Java runtime installed for Jenkins."
+echo "##☕JAVA RUNTIME INSTALLED FOR JENKINS.##"
 
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-echo "🔐 Jenkins GPG key added."
+echo "##🔐 JENKINS GPG KEY ADDED.###"
 
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
-echo "📚 Jenkins repository added."
+echo "##📚 JENKINS REPOSITORY ADDED##."
 
 sudo apt update
-echo "🧰  Repository updated (with Jenkins)."
+echo "##🧰  REPOSITORY UPDATED (with Jenkins).##"
 
 sudo apt install -y jenkins
-echo "✅  Jenkins installed."
+echo "##✅  JENKINS INSTALLED.##"
 
 # --------------------
 # Java Development Kit
 # --------------------
 sudo apt install -y default-jdk
-echo "default-jdk (Java compiler and tools) installed."
+echo "##DEFAULT-JDK (Java compiler and tools) INSTALLED##."
 
 # --------------------
 # pip for Python3
 # --------------------
 sudo apt install -y python3-pip
-echo " 🐍 pip for Python 3 installed."
+echo " ##🐍 PIP for PYTHON 3 INSTALLED##."
 
 # --------------------
 # Ansible
 # --------------------
 sudo apt install -y ansible
-echo "📜Ansible installed."
+echo "##📜ANSIBLE INSTALLED##."
 
 
 
 echo "###🌐 NETWORK TOOLS INSTALLATION STARTED... ###"
 
-echo "Update system"
+echo "##SYSTEM IS BEING UPDATED##..."
 sudo apt update
-echo "System updated..."
+echo "##SYSTEM UPDATED##..."
 
-echo "Install networking tools one by one"
+echo "##INSTALL NETWORKING TOOLS ONE BY ONE##"
 sudo apt install -y iproute2
-echo "iproute2 (ip, ip r, ss) installed."
+echo "##IPROUTE2 (ip, ip r, ss) INSTALLED##."
 
 sudo apt install -y net-tools
-echo "net-tools (ifconfig, netstat) installed."
+echo "##NET-TOOLS (ifconfig, netstat) INSTALLED##."
 
 sudo apt install -y iptables
 echo "iptables installed."
