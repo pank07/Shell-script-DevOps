@@ -41,7 +41,7 @@ echo "##✅  JENKINS INSTALLED.##"
 # Java Development Kit
 # --------------------
 sudo apt install -y default-jdk
-echo "##DEFAULT-JDK (Java compiler and tools) INSTALLED##."
+echo "##☕ 🔄	DEFAULT-JDK (Java compiler and tools) INSTALLED##."
 
 # --------------------
 # pip for Python3
@@ -59,50 +59,50 @@ echo "##📜ANSIBLE INSTALLED##."
 #Setting timezone and dates
 #--------
 timedatectl set-timezone Asia/Kolkata
-echo ""##TIME ZONE SET ON +5:30 GMT Asia/Kolkata.##""
+echo ""##🌍 TIME ZONE SET ON +5:30 GMT Asia/Kolkata.##""
 
 echo "###🌐 NETWORK TOOLS INSTALLATION STARTED... ###"
 
 echo "##SYSTEM IS BEING UPDATED##..."
 sudo apt update
-echo "##SYSTEM UPDATED##..."
+echo "##🔄	 SYSTEM UPDATED##..."
 
 echo "##INSTALL NETWORKING TOOLS ONE BY ONE##"
 sudo apt install -y iproute2
-echo "##IPROUTE2 (ip, ip r, ss) INSTALLED##."
+echo "##🧭 🌐 IPROUTE2 (ip, ip r, ss) INSTALLED##."
 
 sudo apt install -y net-tools
-echo "##NET-TOOLS (ifconfig, netstat) INSTALLED##."
+echo "##🛰️ NET-TOOLS (ifconfig, netstat) INSTALLED##."
 
 sudo apt install -y iptables
-echo "iptables installed."
+echo "📊 iptables installed."
 
 sudo apt install -y curl
-echo "curl installed."
+echo "🌐 curl installed."
 
 sudo apt install -y wget
-echo "wget installed."
+echo "🌐 wget installed."
 
 sudo apt install -y dnsutils
-echo "dnsutils (dig, nslookup) installed."
+echo "📡 dnsutils (dig, nslookup) installed."
 
 sudo apt install -y traceroute
-echo "🧭  traceroute installed."
+echo "🧭 traceroute installed."
 
 sudo apt install -y iputils-ping
-echo "ping installed."
+echo "📡 ping installed."
 
 sudo apt install -y nmap
 echo "🕵️ nmap installed."
 
 sudo apt install -y lsof
-echo "lsof installed."
+echo "📁 lsof installed."
 
 sudo apt install -y ufw
-echo " 🛡️ ufw (firewall tool) installed."
+echo "🛡️ ufw (firewall tool) installed."
 
 sudo apt install -y network-manager
-echo "network-manager (nmcli) installed."
+echo "🔄 network-manager (nmcli) installed."
 
 echo "### 📶ALL NETWORK TOOLS INSTALLED SUCCESSFULLY ###"
 
