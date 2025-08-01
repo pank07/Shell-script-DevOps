@@ -55,7 +55,11 @@ echo " ##🐍 PIP for PYTHON 3 INSTALLED##."
 sudo apt install -y ansible
 echo "##📜ANSIBLE INSTALLED##."
 
-
+#--------
+#Setting timezone and dates
+#--------
+timedatectl set-timezone Asia/Kolkata
+echo ""##TIME ZONE SET ON +5:30 GMT Asia/Kolkata.##""
 
 echo "###🌐 NETWORK TOOLS INSTALLATION STARTED... ###"
 
