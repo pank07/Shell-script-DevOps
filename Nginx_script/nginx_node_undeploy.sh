@@ -1,6 +1,8 @@
 #!/bin/bash
-
-PROJECT_NAME="Ubuddy-school-Admin" # paste your project name
+set -e
+echo "Start to Undeployment"
+read -p "🌐 Enter project name (used for folder and Nginx config): " PROJECT_NAME
+read -p "📁 Enter your project folder name in /home/ubuntu/: " SOURCE_DIR
 echo "### REMOVE "$PROJECT_NAME" NGINX SERVER TO DEPLOY ANOTHER ONE...###"
 
 PROJECT_PATH="/etc/nginx/sites-available/$PROJECT_NAME"
