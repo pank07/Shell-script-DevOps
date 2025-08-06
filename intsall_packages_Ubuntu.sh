@@ -85,6 +85,7 @@ echo "🌐 wget installed."
 
 sudo apt install gping
 echo "🌐 gping installed"
+
 sudo apt install -y dnsutils
 echo "📡 dnsutils (dig, nslookup) installed."
 
@@ -94,6 +95,8 @@ echo "🧭 traceroute installed."
 sudo apt install -y iputils-ping
 echo "📡 ping installed."
 
+sudo apt install bashtop
+echo "📊 bashtop installed"
 sudo apt install -y nmap
 echo "🕵️ nmap installed."
 
