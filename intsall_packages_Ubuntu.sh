@@ -83,6 +83,8 @@ echo "🌐 curl installed."
 sudo apt install -y wget
 echo "🌐 wget installed."
 
+sudo apt install gping
+echo "🌐 gping installed"
 sudo apt install -y dnsutils
 echo "📡 dnsutils (dig, nslookup) installed."
 
