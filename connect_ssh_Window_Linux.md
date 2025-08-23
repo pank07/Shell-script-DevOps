@@ -1,6 +1,6 @@
 - Open Power-Shell(Admin)
-  ```bash
-  Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+```bash
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 
 - Enable and starts SSH service:
