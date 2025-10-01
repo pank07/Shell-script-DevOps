@@ -1,9 +1,12 @@
 #!/bin/bash
 
 set -e
+echo "Start to Deployment"
+read -p "🌐 Enter Localhost IP: " LOCALHOST
+read -p "📁 Enter project name (used for folder and Nginx config): " PROJECT_NAME
+read -p "📁 Enter your project folder name in /home/pank04/: " SOURCE_DIR
+echo "### REMOVE "$PROJECT_NAME" NGINX SERVER TO DEPLOY ANOTHER ONE...###"
 
-LOCALHOST="" #machine_IP
-DOMAIN="$LOCALHOST"
 PROJECT_NAME="" # Paste your project name
 SOURCE_DIR="/home/ubuntu/$PROJECT_NAME"
 DEPLOY_DIR="/var/www/$PROJECT_NAME"
